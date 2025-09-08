@@ -1,6 +1,6 @@
 # SAÉ S1.05-06 – Recueil de besoins et découverte de l’environnement économique et écologique
 
-
+https://moodle.univ-fcomte.fr/pluginfile.php/1743974/mod_resource/content/41/1_SA%C3%89%20S1-05-06_attentes%2C%20planning%2C%20bar%C3%A8me%2C%20etc.pdf
 
 ## Livrables attendus
 1. **Deux questionnaires clients** :  
