@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/* <================================================ BODY ET HAUT DU SITE ================================================> */
 body {
     font-family: "Open Sans", sans-serif;
     background-image: url("../images/edox-background.jpg");
@@ -98,7 +100,7 @@ header {
     pointer-events: auto;
 }
 
-/* Sections */
+/* <================================================ TITRE DU SITE ET BOUTON SCROLL ================================================> */
 .section {
     min-height: 100vh;
     display: flex;
@@ -158,7 +160,7 @@ header {
 .scroll-button img {
     width: 70px;
     height: auto;
-    transform: rotate(90deg); /* rotation car image est orientee vers la droite */
+    transform: rotate(90deg); /* rotation car images/right-arrow.png est orientee vers la droite */
     filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
     transition: transform 0.3s ease;
 }
@@ -167,7 +169,9 @@ header {
     transform: rotate(90deg) translateX(-5px);
 }
 
-/* Content Section */
+
+
+/* <================================================ PARTIE INFOS SUR PAGES DU SITE ================================================> */
 #content-section {
     position: relative;
 }
@@ -256,18 +260,19 @@ header {
 }
 
 .decouvrir-zone>button {
-    background-color: rgba(11, 96, 176, 0.2);
+    background-color: rgba(65, 105, 225, 0.4);
     padding: 13px 25px;
-    border-radius: 5px;
+    border-radius: 16px;
     font-family: "Montserrat";
     font-style: italic;
     font-size: clamp(16px, 4vw, 22px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     color: beige;
 }
 
 .decouvrir-zone>button:hover {
     cursor: pointer;
-    background-color: rgba(19, 191, 197, 0.2);
+    background-color: rgba(65, 193, 225, 0.4);
 }
 
 button>a {
@@ -342,6 +347,10 @@ footer {
     z-index: 999;
 }
 
+
+/* <================================================ RESPONSIVE ================================================> */
+
+/* infos sur page: image et description, afficher en colonne sur petit ecran */
 @media (max-width: 950px) {
     .content-item-cols {
         display: flex;
@@ -354,7 +363,7 @@ footer {
     }
 }
 
-/* Responsive */
+/* responsive du header, menu deroulant et infos sur pages */
 @media (max-width: 768px) {
     header {
         flex-direction: row;
@@ -420,6 +429,25 @@ footer {
     }
 }
 
+@media (max-width: 468px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 25vw;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 600px) {
     .content-wrapper {
         width: 95%;
@@ -452,21 +480,3 @@ footer {
     }
 }
 
-@media (max-width: 468px) {
-    header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    #logo {
-        width: 25vw;
-        margin-bottom: 10px;
-    }
-
-    footer {
-        font-size: 0.8rem;
-        text-align: center;
-        justify-content: center;
-        padding-left: 0;
-    }
-}
