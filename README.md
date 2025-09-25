@@ -52,7 +52,7 @@ https://moodle.univ-fcomte.fr/pluginfile.php/1743974/mod_resource/content/41/1_S
 - Mathis GUIHOT (smegmuss) – référent - contributions:
 - Lino DUBOIS (MORILO2607)- contributions:
 - Alban FAYARD (Fuoxx) - contributions:
-- Mohamed BOUOIARARNE - contributions: 
+- Mohamed BOUOIARARNE (medbourarne) - contributions: 
 
 ---
 
