@@ -1,28 +1,35 @@
 *{
     margin:0px;
+    font-family: sans-serif;
 }
 
 header{
-    background-color: #000000;
+    background-color: #303030;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     margin: auto;
+
 }
 
+
 #logo{
-    width:160px;
-    height:132;
-    padding-top: 25px;
+    height:20%;
+    width:15%;
+    margin-right:20px;
+    margin-top: 30px
 }
 
 .dropbtn {
-    background: rgb(16, 16, 103);
-    color:white;
+    background: #1a365d;
+    color:beige;
     padding:16px;
     font-size: 16px;
     border: none;
+    border-radius: 10%;
+    margin-left:10px;
+    margin-top: 5px;
 }
 
 .dropdown {
@@ -47,9 +54,10 @@ header{
     display: block
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #96c0e0;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #96c0e0;}
+
 
 .container {
     position: relative;
@@ -83,5 +91,19 @@ header{
          url('fonts/anson-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+
+
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: #303030;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: beige
 }
