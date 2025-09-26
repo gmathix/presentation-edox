@@ -24,7 +24,7 @@ https://moodle.univ-fcomte.fr/pluginfile.php/1743974/mod_resource/content/41/1_S
 
 
 ## dates principales
-- **19/09** : dépôt du questionnaire n°1 + planning prévisionnel  (Déjà finis et déposés)
+- **19/09** : dépôt du questionnaire n°1 + planning prévisionnel
 - **26/09** : création du compte GitHub + mise en ligne de la structure du site  
 - **03/10** : dépôt du questionnaire n°2 + représentations graphiques + README à jour  
 - **14/10** : dépôt du site final sur GitHub, GitLab et Bitbucket + validation W3C  
