@@ -1,0 +1,137 @@
+:root {
+  --color-dark: #1a1a1a;
+  --color-light: #f9f9f9;
+  --color-accent: #006644;
+  --color-muted: #555;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.5;
+}
+
+.site-header {
+  background: var(--color-dark);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-header .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  transition: background 0.3s;
+}
+
+.site-header .menu a:hover,
+.site-header .menu a.active {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  color: var(--color-dark);
+}
+
+.hero p {
+  color: var(--color-muted);
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  flex: 1 1 240px;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.graphique {
+  margin-top: 3rem;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  justify-content: center;
+  height: 200px;
+  margin-top: 1rem;
+  border-left: 2px solid var(--color-muted);
+  border-bottom: 2px solid var(--color-muted);
+  padding-bottom: 0.5rem;
+}
+
+.bar {
+  background: var(--color-accent);
+  width: 30px;
+  height: calc(var(--val) * 1%);
+  position: relative;
+  transition: background 0.3s;
+}
+
+.bar:hover {
+  background: #004d40;
+}
+
+.bar span {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  color: var(--color-dark);
+}
+
+.site-footer {
+  background: var(--color-dark);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .stat-card {
+    width: 100%;
+  }
+}
