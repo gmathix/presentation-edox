@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Présentation EDOX</title>
 
-    <!-- Police Open Sans -->
+
+    <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
@@ -57,11 +58,22 @@
     <div class="container">
         
 
-        <div class="titre-site">
-            SITE DE PRESENTATION - EDOX
+        <div class="titre-site-nv1">
+            SITE DE PRÉSENTATION - EDOX
+        </div>
+        <div class="titre-site-nv2">
+            L'innovation numérique au service des entreprises
+        </div>
+        
+
+        <div class="scroll-button" id="scroll-button">
+            <span>Découvrir</span>
+            <img src="images/right-arrow.png" alt="Flèche vers le bas">
         </div>
 
-        <div class="info-container">INFOS LAISDFJSADKLF;HA SDKJH FOIPASUDFOIPAYD</div>
+       <div class="info-container">
+        OAIFDLK;ASDJFLSDKAJ
+       </div> 
     </div>
 
     <footer>
@@ -79,12 +91,21 @@
         dropdown.classList.toggle('active');
     });
 
-    // Optional: close the menu if you click elsewhere
+    // fermer le menu si l'utilisateur clique quelque part
     document.addEventListener('click', (e) => {
         if (!dropdown.contains(e.target)) {
             dropdown.classList.remove('active');
         }
     });
+
+    const scrollButton = document.getElementById('scroll-button');
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
+    
 </script>
 </body>
 </html>
