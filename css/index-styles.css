@@ -10,13 +10,25 @@ header{
     align-items: flex-start;
     justify-content: space-between;
     margin: auto;
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/edox-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* image doit rester statique */
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 #logo{
     margin-right: 20px;
-    width:120px;
-    height:40px;
     margin-top: 30px;
+    width:10vw;
+    height: auto;
+    max-width: 150px;
+    min-width: 80px;
 }
 
 .dropbtn {
@@ -60,13 +72,12 @@ header{
 .container {
     position: relative;
     display:flex;
-    align-items: flex-start;
-}
-
-#background-image {
-    position: absolute;
-    height: auto;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
 }
 
 
@@ -104,4 +115,31 @@ footer {
     align-items: flex-start;
     justify-content: space-evenly;
     color: beige
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 25vw;
+        margin-top: 10px;
+    }
+
+    .titre-site {
+        left: 0;
+        top: 0;
+        background-color: rgba(31, 100, 165, 0.7);
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+        justify-content: center;
+    }
 }
