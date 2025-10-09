@@ -1,16 +1,6 @@
-*{
+* {
     margin:0px;
-    font-family: sans-serif;
-}
-
-header{
-    background-color: #303030 ;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: auto;
-    width: 100%;
+    font-family: "Open Sans";
 }
 
 body {
@@ -20,53 +10,177 @@ body {
     background-attachment: fixed; /* image doit rester statique */
     background-repeat: no-repeat;
     min-height: 100vh;
+    margin: 0;
+    padding-top: 70px;
 }
 
-#logo{
-    margin-right: 20px;
-    margin-top: 30px;
-    width:10vw;
+header {
+    background-color: rgba(51, 48, 48, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;         
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+    width: 10vw;
     height: auto;
     max-width: 150px;
     min-width: 80px;
 }
 
+/* Hamburger button */
 .dropbtn {
-    background: #1a365d;
-    color:beige;
-    padding:16px;
-    font-size: 16px;
+    background: none;
     border: none;
-    border-radius: 10%;
-    margin-left:10px;
-    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    padding: 0;
+    margin-right: 40px
 }
 
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: beige;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown container */
 .dropdown {
     position: relative;
-    display: inline-block;
-    padding: 20px 0px;
 }
 
+/* Dropdown content */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #1a365d;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    margin-right: 26px;
+    background-color: #1a365d;
+    min-width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 100;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     color: beige;
     padding: 12px 16px;
     text-decoration: none;
-    display: block
+    display: block;
 }
 
-.dropdown-content a:hover {background-color: #96c0e0;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #96c0e0;}
+.dropdown-content a:hover {
+    background-color: #F0EDCF;
+    color: black;
+}
+
+/* When active */
+.dropdown.active .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Optional: animate the hamburger into an X when open */
+.dropdown.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.dropdown.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.dropdown.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.dropdown-content {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background-color: #1a365d;
+    min-width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+    text-align: center;
+}
+
+/* Active state remains the same */
+.dropdown.active .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/*   REPONSIVE DU MENU DEROULANT */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .dropdown-content {
+        position: fixed;
+        top: 90px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        background-color: #1a365d;
+        transform: translateY(-40px);
+        text-align: center;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 16px;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .dropdown.active .dropdown-content {
+        transform: translateY(0);
+    }
+
+    /* menu deroulant doit prendre toute la largeur */
+    .dropbtn {
+        width: 35px;
+        height: 25px;
+    }
+
+    .bar {
+        height: 4px;
+        border-radius: 3px;
+    }
+}
+
+
+
+
+
 
 
 .container {
@@ -86,22 +200,26 @@ body {
     position: relative;
     align-items: flex-start;
     justify-content: center;
-    left: 80px;
-    top: 40px;
-    background-color: rgba(31, 100, 165, 0.5) ;
-    padding: 20px;
-    border-radius: 10px ;
-    font-family: 'ansonregular'
+    top: 0px;
+    font-size: 40px;
+    color: #0B60B0;
+}
+
+.info-container {
+    position: relative;
+    background-color: rgba(36, 34, 34, 0.2);
+    width: 300px;
+    margin-top:1000px;
 }
 
 @font-face {
-    font-family: 'ansonregular';
-    src: url('fonts/anson-webfont.woff2') format('woff2'),
-         url('fonts/anson-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Penultimate';
+    src: url("../fonts/Penultimate/Penultimate.woff") format('woff'),
+         url("../fonts/Penultimate/Penultimate.woff2") format('woff2');
+    font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
-
 
 
 footer {

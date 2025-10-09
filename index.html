@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <title>Présentation EDOX</title>
 
+    <!-- Police Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
@@ -28,33 +33,55 @@
 <body>
 
     <header>
+        <img id="logo" src="images/edox-logo.svg">
         <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="index.html">Accueil</a>
-                <a href="page1.html">Organisation et fonctionnement</a>
-                <a href="page2.html">Présentation économique</a>
-                <a href="page3.html">L'impact écologique</a>
-            </div>
+        <button class="dropbtn" id="menu-button" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="dropdown-content" id="dropdown-content">
+            <a href="index.html">Accueil</a>
+            <a href="page1.html">Organisation et fonctionnement</a>
+            <a href="page2.html">Présentation économique</a>
+            <a href="page3.html">L'impact écologique</a>
         </div>
-        <img id="logo" src="images/edox-logo.png">
+    </div>
     </header>
 
-    <hr>
 
     <div class="container">
         
 
         <div class="titre-site">
-            Présentation - EDOX
-            Site web pour présenter l'entreprise EDOX, grossiste du numérique, d'un point de vue économique, son organisation et son foncionnement, ainsi que son impact écologique.
-Le site doit être créé en HTML/CSS/JavaScript en tenant compte des besoins du client, le but étant de le rendre agréable et facile à consulter. 
-La soutenance finale consistera à effectuer une démonstration du site ainsi qu'une présentation d'EDOX et l'explication des démarches de la création du site.
+            SITE DE PRESENTATION - EDOX
         </div>
+
+        <div class="info-container">INFOS LAISDFJSADKLF;HA SDKJH FOIPASUDFOIPAYD</div>
     </div>
 
     <footer>
         <p>&copy; Écrit par Mathis GUIHOT</p>
     </footer>
+
+
+
+
+    <script>
+    const menuButton = document.getElementById('menu-button');
+    const dropdown = document.querySelector('.dropdown');
+
+    menuButton.addEventListener('click', () => {
+        dropdown.classList.toggle('active');
+    });
+
+    // Optional: close the menu if you click elsewhere
+    document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
+        }
+    });
+</script>
 </body>
 </html>
