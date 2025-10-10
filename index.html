@@ -39,73 +39,187 @@
     <header>
         <img id="logo" src="images/edox-logo.svg">
         <div class="dropdown">
-        <button class="dropbtn" id="menu-button" aria-label="Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <div class="dropdown-content" id="dropdown-content">
-            <a href="index.html">Accueil</a>
-            <a href="page1.html">Organisation et fonctionnement</a>
-            <a href="page2.html">Présentation économique</a>
-            <a href="page3.html">L'impact écologique</a>
+            <button class="dropbtn" id="menu-button" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="index.html">Accueil</a>
+                <a href="page1.html">Organisation et fonctionnement</a>
+                <a href="page2.html">Présentation économique</a>
+                <a href="page3.html">L'impact écologique</a>
+            </div>
         </div>
-    </div>
     </header>
 
-
-    <div class="container">
+    
+    <section id="titre-section" class="section">
+        <div class="titre-site-nv1">SITE DE PRÉSENTATION - EDOX</div>
+        <div class="titre-site-nv2">L'innovation numérique au service des entreprises</div>
         
-
-        <div class="titre-site-nv1">
-            SITE DE PRÉSENTATION - EDOX
-        </div>
-        <div class="titre-site-nv2">
-            L'innovation numérique au service des entreprises
-        </div>
-        
-
         <div class="scroll-button" id="scroll-button">
             <span>Découvrir</span>
             <img src="images/right-arrow.png" alt="Flèche vers le bas">
         </div>
+    </section>
 
-       <div class="info-container">
-        OAIFDLK;ASDJFLSDKAJ
-       </div> 
-    </div>
+    
+    <section id="content-section" class="section">
+        <div class="content-wrapper">
+            <div class="nav-arrow left" id="prev-arrow">
+                <img src="images/left-arrow.png">
+            </div>
+
+            <div class="content-box">
+                <div class="content-item active" data-index="0">
+                    <h2>Organisation et fonctionnement</h2>
+                    <div class="content-item-cols">
+                        <!-- mettre organigramme et / ou images de produits-->
+                        <div class="content-items-p-container">
+                            <p>Découvrez comment EDOX révolutionne l'organisation des entreprises grâce à des solutions numériques innovantes.</p>
+                            <p>Notre plateforme offre des outils de gestion intégrés qui permettent d'optimiser les processus métiers et d'améliorer la collaboration entre les équipes.</p>
+                            <p>Avec EDOX, simplifiez vos opérations quotidiennes et concentrez-vous sur ce qui compte vraiment : la croissance de votre entreprise.</p>
+                        </div>
+                    </div>
+                    <div class="decouvrir-zone">
+                        <button class="decouvrir-button"><a href="page1.html">En savoir plus</a></button>
+                    </div>
+                </div>
+
+                <div class="content-item" data-index="1">
+                    <h2>Présentation économique</h2>
+                    <div class="content-item-cols">
+                        <img src="graphiques/edox-CA-resultatnet.png">
+                        <div class="content-item-p-container">
+                            <p>EDOX propose des solutions économiquement viables qui s'adaptent à toutes les tailles d'entreprises.</p>
+                            <p>Nos modèles de tarification flexibles permettent aux startups comme aux grandes entreprises de bénéficier de nos services sans compromettre leur budget.</p>
+                            <p>Investissez dans l'avenir de votre entreprise avec des outils qui génèrent un retour sur investissement mesurable.</p>
+                        </div>
+                    </div>
+                    <div class="decouvrir-zone">
+                        <button class="decouvrir-button"><a href="page2.html">En savoir plus</a></button>
+                    </div>
+                </div>
+
+                <div class="content-item" data-index="2">
+                    <h2>L'impact écologique</h2>
+                    <div class="content-item-cols">
+                        <img src="graphiques/graphique-ecologie-1-cropped.png">
+                        <div class="content-item-p-container">
+                            <p>Chez EDOX, nous sommes engagés dans une démarche de responsabilité environnementale.</p>
+                            <p>Nos solutions numériques réduisent l'empreinte carbone des entreprises en minimisant l'utilisation de papier et en optimisant les ressources énergétiques.</p>
+                            <p>Rejoignez-nous dans notre mission pour un avenir numérique plus durable et respectueux de l'environnement.</p>
+                        </div>
+                    </div>
+                    <div class="decouvrir-zone">
+                        <button class="decouvrir-button"><a href="page3.html">En savoir plus</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-arrow right" id="next-arrow">
+                <img src="images/right-arrow.png">
+            </div>
+        </div>
+
+        <div class="content-indicator">
+            <div class="indicator-dot active" data-index="0"></div>
+            <div class="indicator-dot" data-index="1"></div>
+            <div class="indicator-dot" data-index="2"></div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; Écrit par Mathis GUIHOT</p>
     </footer>
 
-
-
-
     <script>
-    const menuButton = document.getElementById('menu-button');
-    const dropdown = document.querySelector('.dropdown');
+        // Menu dropdown
+        const menuButton = document.getElementById('menu-button');
+        const dropdown = document.querySelector('.dropdown');
 
-    menuButton.addEventListener('click', () => {
-        dropdown.classList.toggle('active');
-    });
-
-    // fermer le menu si l'utilisateur clique quelque part
-    document.addEventListener('click', (e) => {
-        if (!dropdown.contains(e.target)) {
-            dropdown.classList.remove('active');
-        }
-    });
-
-    const scrollButton = document.getElementById('scroll-button');
-    scrollButton.addEventListener('click', () => {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'smooth'
+        menuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
         });
-    });
-    
-</script>
+
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Scroll button
+        const scrollButton = document.getElementById('scroll-button');
+        scrollButton.addEventListener('click', () => {
+            document.getElementById('content-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Content navigation
+        const contentItems = document.querySelectorAll('.content-item');
+        const prevArrow = document.getElementById('prev-arrow');
+        const nextArrow = document.getElementById('next-arrow');
+        const indicators = document.querySelectorAll('.indicator-dot');
+        let currentIndex = 0;
+
+        function showContent(index) {
+            contentItems.forEach(item => item.classList.remove('active'));
+            indicators.forEach(dot => dot.classList.remove('active'));
+            
+            contentItems[index].classList.add('active');
+            indicators[index].classList.add('active');
+            currentIndex = index;
+        }
+
+        prevArrow.addEventListener('click', () => {
+            const newIndex = (currentIndex - 1 + contentItems.length) % contentItems.length;
+            showContent(newIndex);
+        });
+
+        nextArrow.addEventListener('click', () => {
+            const newIndex = (currentIndex + 1) % contentItems.length;
+            showContent(newIndex);
+        });
+
+        indicators.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.getAttribute('data-index'));
+                showContent(index);
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevArrow.click();
+            } else if (e.key === 'ArrowRight') {
+                nextArrow.click();
+            }
+        });
+
+        // Touch swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const contentBox = document.querySelector('.content-box');
+
+        contentBox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        contentBox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                nextArrow.click();
+            }
+            if (touchEndX > touchStartX + 50) {
+                prevArrow.click();
+            }
+        }
+    </script>
 </body>
 </html>
