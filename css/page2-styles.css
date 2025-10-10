@@ -1,12 +1,12 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     font-family: Arial, sans-serif;
-    
-    
+
+
 }
 
 body{
-    background-image: url("../images/edox-background.jpg");
+    background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;         
+    z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -50,7 +50,7 @@ header {
     width: 28px;
     height: 22px;
     padding: 0;
-    margin-right: 40px
+    margin-right: 40px;
 }
 
 .bar {
@@ -134,7 +134,7 @@ header {
         align-items: center;
     }
 
-    
+
     .dropdown-content {
         position: fixed;
         top: 90px;
@@ -179,7 +179,7 @@ header {
 
 .container {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -191,46 +191,94 @@ header {
 /* ==============================BODY================================== */
 
 
-h1{
-    text-align: center;
-    padding: 100px 0px 100px 0px;
-    
+
+/* image bandeau avec texte */
+
+.bandeau_titre {
+    position: relative;
 }
 
-section{
+#bandeau {
+    width: 100vw;
+    height: auto;
+    z-index: 10;
+}
+
+h1 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: clamp(28px, 6vw, 60px);
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/* TITRE */
+
+
+
+
+/* TUILES TONDEUSE A GAZON  */
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 150px;
-    margin :100px;
+    gap: 80px;
+    margin: 100px;
 
 }
 
-.container{
+
+.big_container {
+    width: 100%;
+    height: auto;
+    background-color: rgba(36, 34, 34, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: white;
+}
+
+
+.container {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    height: 100%;
+    width: 100%;
 }
 
-.rep_graphe{
+.rep_graphe {
     background-color: #27bbff83;
-    height: 500px;
-    width: 800px;
+    height: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
 
 }
 
-.texte{
-    
+.texte {
+
     background-color: rgba(80, 80, 80, 0.486);
-    height: 500px;
-    width: 800px;
+    height: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
 }
 
-.rep_graphe img{
+.rep_graphe img {
     height: 100%;
     width: 100%;
 }
@@ -249,6 +297,5 @@ footer {
     align-items: flex-start;
     justify-content: space-evenly;
     color: white;
-    
-}
 
+}
