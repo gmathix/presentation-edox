@@ -5,7 +5,14 @@
     
 }
 
-
+body{
+    background-image: url("../images/edox-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
 /* ==============================HEADER================================== */
 
@@ -181,14 +188,7 @@ header {
 }
 
 /* ==============================BODY================================== */
-body{
-    background-image: url("../images/edox-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
+
 
 h1{
     text-align: center;
