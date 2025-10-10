@@ -243,8 +243,9 @@ header {
 
 .content-item-cols img {
     margin-top: 20px;
-    width: 50%;
-    height: 50%;
+    width: 48%;
+    height: 48%;
+    border-radius: 13px;
 }
 
 .decouvrir-zone {
