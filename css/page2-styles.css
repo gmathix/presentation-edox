@@ -18,6 +18,12 @@ body{
 
 /* ==============================HEADER================================== */
 
+#haut_de_page{
+    position:  absolute ; /*pour permettre a la fleche retour de remonter tout en haut de la page */
+    height: 0px;
+    
+}
+
 header {
     background-color: rgba(51, 48, 48, 0.6);
     display: flex;
@@ -280,25 +286,40 @@ section {
   
 }
 
-/* ==============================BACKGROUND================================== */
+/* ==============================RETOUR AUTRES PAGES ================================== */
 
-.background{
+.back{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.background a{
+.back a{
     text-decoration:none;
     color: #000;
     font-size: large;
 }
 
 
+
+/* ==============================BACK TO TOP================================== */
+
+
+
 .scroll-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.scroll-button p{
+    color: #1476f5;
+    font-weight: bold;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+
 }
 
 .scroll-button:hover {
