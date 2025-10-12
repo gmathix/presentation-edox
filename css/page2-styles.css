@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("../images/background.png");
+    background-image: url("images/background.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -172,11 +172,6 @@ header {
 }
 
 
-
-
-
-
-
 .container {
     position: relative;
     display: flex;
@@ -233,7 +228,7 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    margin: 100px;
+    margin: 100px 100px 200px 100px;
 
 }
 
@@ -247,7 +242,6 @@ section {
     padding: 40px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
-
     color: white;
 }
 
@@ -264,9 +258,6 @@ section {
     background-color: #27bbff83;
     height: 100%;
     width: 50%;
-    padding: 10px;
-    border-radius: 5px;
-
 }
 
 .texte {
@@ -274,28 +265,60 @@ section {
     background-color: rgba(80, 80, 80, 0.486);
     height: 100%;
     width: 50%;
-    padding: 10px;
+    
+
     border-radius: 5px;
 }
 
 .rep_graphe img {
     height: 100%;
     width: 100%;
+  
 }
+
+/* ==============================BACKPAGE================================== */
+
+.backpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.backpage a{
+    text-decoration:none;
+    color: #000;
+    font-size: large;
+}
+
+
+.scroll-button {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.scroll-button:hover {
+    transform:  translateY(-5px);
+}
+
+.scroll-button img {
+    width: 70px;
+    height: auto;
+    transform: rotate(-90deg); 
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+    transition: transform 0.3s ease;
+}
+
+
 
 
 /* ==============================FOOTER================================== */
 
 footer {
-    height: 40px;
-    width: 100%;
-    background-color: #303030;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
     color: white;
+    background-color: rgba(51, 48, 48, 0.6);
+    align-items: center;
+    padding: 10px ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 
 }
