@@ -81,15 +81,15 @@
                     <img src="images/edox-ca.png" alt="edox ca-va">
                 </div>
                 <div class="texte">
-                    <p>Le graphique montre une forte croissance du chiffre d’affaires d’Edox entre 2016 et 2025,
+                    <p>Le graphique montre une forte croissance du chiffre d'affaires d'Edox entre 2016 et 2025,
                         accompagnée
-                        d’une hausse plus irrégulière du résultat net. Cela traduit une entreprise en expansion, mais
+                        d'une hausse plus irrégulière du résultat net. Cela traduit une entreprise en expansion, mais
                         confrontée à des variations de rentabilité liées à des investissements importants ou à une
                         hausse
                         des coûts.
-                        Cette évolution témoigne d’une bonne dynamique commerciale et d’une stratégie efficace,
+                        Cette évolution témoigne d'une bonne dynamique commerciale et d'une stratégie efficace,
                         renforçant
-                        la solidité économique d’Edox. Cependant, la légère baisse du résultat net avant 2025 invites à
+                        la solidité économique d'Edox. Cependant, la légère baisse du résultat net avant 2025 invites à
                         maîtriser les dépenses pour maintenir une croissance durable et une rentabilité stable.
                     </p>
                 </div>
@@ -115,10 +115,24 @@
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="backpage">
+            <a href="index.html">Accueil</a>
+            <a href="page1.html">Organisation et fonctionnement</a>
+            <a href="page3.html">L'impact écologique</a>
+        </div>
+
+<div class="scroll-button" id="scroll-button">
+        <img src="images/right-arrow.png" alt="Flèche vers le bas">
+    </div>
+
+        
+    </section>        
+    
+    
 
 
-    <!--================= javascript pour le bouton menu ==================  -->
+    <!--================= javascript pour le bouton menu et la fleche retour haut de page ==================  -->
 
     <script>
         const menuButton = document.getElementById('menu-button');
@@ -135,12 +149,10 @@
             }
         });
 
+        // Scroll button
         const scrollButton = document.getElementById('scroll-button');
         scrollButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth'
-            });
+            document.getElementByClass('big_container').scrollIntoView({ behavior: 'smooth' });
         });
 
     </script>
@@ -148,7 +160,7 @@
 </body>
 
 <footer>
-    <p>&copy; Écrit par Lino DUBOIS</p>
+    &copy; Écrit par Lino DUBOIS
 </footer>
 
 </html>
