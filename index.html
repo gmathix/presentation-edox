@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="css/index-styles.css" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Présentation EDOX</title>
-
+    <link rel="stylesheet" href="css/index-styles.css">
 
     <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,148 +38,163 @@
 <body>
 
     <header>
-        <img id="logo" src="images/edox-logo.svg">
-        <div class="dropdown">
-            <button class="dropbtn" id="menu-button" aria-label="Menu">
+
+        <img id="logo" src="images/edox-logo.svg" alt="logo edox">
+        <div class="deroulant">
+
+            <button class="bouton-drop" id="bouton-menu" aria-label="Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            <div class="dropdown-content" id="dropdown-content">
+            <div class="deroulant-contenu" id="deroulant-contenu">
                 <a href="index.html">Accueil</a>
                 <a href="page1.html">Organisation et fonctionnement</a>
                 <a href="page2.html">Présentation économique</a>
                 <a href="page3.html">L'impact écologique</a>
             </div>
         </div>
+
     </header>
 
     
     <section id="titre-section" class="section">
-        <div class="titre-site-nv1">SITE DE PRÉSENTATION - EDOX</div>
-        <div class="titre-site-nv2">L'innovation numérique au service des entreprises</div>
+        <h1>SITE DE PRÉSENTATION - EDOX</h1>
+        <h2>L'innovation numérique au service des entreprises</h2>
         
-        <div class="scroll-button" id="scroll-button">
+        <div class="bouton-scroll" id="bouton-scroll">
             <span>Découvrir</span>
             <img src="images/right-arrow.png" alt="Flèche vers le bas">
         </div>
     </section>
 
     
-    <section id="content-section" class="section">
-        <div class="content-wrapper">
+    <section id="section-contenu" class="section">
+        <div class="wrapper-contenu">
+
             <div class="nav-arrow left" id="prev-arrow">
-                <img src="images/left-arrow.png">
+                <img src="images/left-arrow.png" alt="fleche gauche">
             </div>
 
-            <div class="content-box">
-                <div class="content-item active" data-index="0">
+            <div class="contenu-box">
+                <div class="contenu-item active" data-index="0">
                     <h2>Organisation et fonctionnement</h2>
-                    <div class="content-item-cols">
+                    <div class="contenu-item-cols">
                         <!-- mettre organigramme et / ou images de produits-->
-                        <div class="content-items-p-container">
+                        <div class="contenu-items-p-container">
                             <p>Découvrez comment EDOX révolutionne l'organisation des entreprises grâce à des solutions numériques innovantes.</p>
                             <p>Notre plateforme offre des outils de gestion intégrés qui permettent d'optimiser les processus métiers et d'améliorer la collaboration entre les équipes.</p>
                             <p>Avec EDOX, simplifiez vos opérations quotidiennes et concentrez-vous sur ce qui compte vraiment : la croissance de votre entreprise.</p>
                         </div>
                     </div>
                     <div class="decouvrir-zone">
-                        <button class="decouvrir-button"><a href="page1.html">En savoir plus</a></button>
+                        <a class="decouvrir-bouton" href="page1.html">En savoir plus</a>
                     </div>
                 </div>
 
-                <div class="content-item" data-index="1">
+                <div class="contenu-item" data-index="1">
                     <h2>Présentation économique</h2>
-                    <div class="content-item-cols">
-                        <img src="graphiques/edox-CA-resultatnet.png">
-                        <div class="content-item-p-container">
+                    <div class="contenu-item-cols">
+                        <img src="graphiques/edox-CA-resultatnet.png" alt="graphique CA et resultat net">
+                        <div class="contenu-item-p-container">
                             <p>EDOX propose des solutions économiquement viables qui s'adaptent à toutes les tailles d'entreprises.</p>
                             <p>Nos modèles de tarification flexibles permettent aux startups comme aux grandes entreprises de bénéficier de nos services sans compromettre leur budget.</p>
                             <p>Investissez dans l'avenir de votre entreprise avec des outils qui génèrent un retour sur investissement mesurable.</p>
                         </div>
                     </div>
                     <div class="decouvrir-zone">
-                        <button class="decouvrir-button"><a href="page2.html">En savoir plus</a></button>
+                        <a class="decouvrir-bouton" href="page2.html">En savoir plus</a>
                     </div>
                 </div>
 
-                <div class="content-item" data-index="2">
+                <div class="contenu-item" data-index="2">
                     <h2>L'impact écologique</h2>
-                    <div class="content-item-cols">
-                        <img src="graphiques/graphique-ecologie-1-cropped.png">
-                        <div class="content-item-p-container">
+                    <div class="contenu-item-cols">
+                        <img src="graphiques/graphique-ecologie-1-cropped.png" alt="graphique ecologie">
+                        <div class="contenu-item-p-container">
                             <p>Chez EDOX, nous sommes engagés dans une démarche de responsabilité environnementale.</p>
                             <p>Nos solutions numériques réduisent l'empreinte carbone des entreprises en minimisant l'utilisation de papier et en optimisant les ressources énergétiques.</p>
                             <p>Rejoignez-nous dans notre mission pour un avenir numérique plus durable et respectueux de l'environnement.</p>
                         </div>
                     </div>
                     <div class="decouvrir-zone">
-                        <button class="decouvrir-button"><a href="page3.html">En savoir plus</a></button>
+                        <a class="decouvrir-bouton" href="page3.html">En savoir plus</a>
                     </div>
                 </div>
             </div>
 
             <div class="nav-arrow right" id="next-arrow">
-                <img src="images/right-arrow.png">
+                <img src="images/right-arrow.png" alt="fleche droite">
             </div>
         </div>
 
-        <div class="content-indicator">
-            <div class="indicator-dot active" data-index="0"></div>
-            <div class="indicator-dot" data-index="1"></div>
-            <div class="indicator-dot" data-index="2"></div>
+        <div class="contenu-indicateur">
+            <div class="indicateur-dot active" data-index="0"></div>
+            <div class="indicateur-dot" data-index="1"></div>
+            <div class="indicateur-dot" data-index="2"></div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; Écrit par Mathis GUIHOT</p>
+        <div class="footer-left">
+            <p style="font-weight: bold;">Année universitaire 2025-2026 / Semestre 1</p>
+            <p style="font-style:italic">SAÉ 05-06 - Groupe 8 - Sujet : EDOX</p>
+            <p>Mathis GUIHOT (référent)</p>
+            <p>Alban FAYARD</p>
+            <p>Lino DUBOIS</p>
+            <p>Mohamed BOUOIARARNE</p>
+        </div>
+        <div class="footer-right">
+            <p >&copy; Écrit par Mathis GUIHOT</p>
+            <a style="color:beige" href="ressources/rapport-eco.pdf" download>Rapport économique (PDF)</a>
+        </div>
     </footer>
 
     <script>
         // menu deroulant
-        const menuButton = document.getElementById('menu-button');
-        const dropdown = document.querySelector('.dropdown');
+        const boutonMenu = document.getElementById('bouton-menu');
+        const deroulant = document.querySelector('.deroulant');
 
-        menuButton.addEventListener('click', (e) => {
+        boutonMenu.addEventListener('click', (e) => {
             e.stopPropagation();
-            dropdown.classList.toggle('active');
+            deroulant.classList.toggle('active');
         });
 
         document.addEventListener('click', (e) => {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('active');
+            if (!deroulant.contains(e.target)) {
+                deroulant.classList.remove('active');
             }
         });
 
         // bouton decouvrir 
-        const scrollButton = document.getElementById('scroll-button');
-        scrollButton.addEventListener('click', () => {
-            document.getElementById('content-section').scrollIntoView({ behavior: 'smooth' });
+        const boutonScroll = document.getElementById('bouton-scroll');
+        boutonScroll.addEventListener('click', () => {
+            document.getElementById('section-contenu').scrollIntoView({ behavior: 'smooth' });
         });
 
         // navigation entre infos pages
-        const contentItems = document.querySelectorAll('.content-item');
+        const contenuItems = document.querySelectorAll('.contenu-item');
         const prevArrow = document.getElementById('prev-arrow');
         const nextArrow = document.getElementById('next-arrow');
-        const indicators = document.querySelectorAll('.indicator-dot');
+        const indicateurs = document.querySelectorAll('.indicateur-dot');
         let currentIndex = 0;
 
         function showContent(index) {
-            contentItems.forEach(item => item.classList.remove('active'));
-            indicators.forEach(dot => dot.classList.remove('active'));
+            contenuItems.forEach(item => item.classList.remove('active'));
+            indicateurs.forEach(dot => dot.classList.remove('active'));
             
-            contentItems[index].classList.add('active');
-            indicators[index].classList.add('active');
+            contenuItems[index].classList.add('active');
+            indicateurs[index].classList.add('active');
             currentIndex = index;
         }
 
         prevArrow.addEventListener('click', () => {
-            const newIndex = (currentIndex - 1 + contentItems.length) % contentItems.length;
+            const newIndex = (currentIndex - 1 + contenuItems.length) % contenuItems.length;
             showContent(newIndex);
         });
 
         nextArrow.addEventListener('click', () => {
-            const newIndex = (currentIndex + 1) % contentItems.length;
+            const newIndex = (currentIndex + 1) % contenuItems.length;
             showContent(newIndex);
         });
 

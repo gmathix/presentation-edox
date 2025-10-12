@@ -40,7 +40,7 @@ header {
     font-size: 24px;
 }
 
-.dropbtn {
+.bouton-drop {
     background: none;
     border: none;
     cursor: pointer;
@@ -61,11 +61,11 @@ header {
     transition: all 0.3s ease;
 }
 
-.dropdown {
+.deroulant {
     position: relative;
 }
 
-.dropdown-content {
+.deroulant-contenu {
     position: absolute;
     right: 0;
     top: 45px;
@@ -82,19 +82,19 @@ header {
     text-align: center;
 }
 
-.dropdown-content a {
+.deroulant-contenu a {
     color: beige;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+.deroulant-contenu a:hover {
     background-color: #F0EDCF;
     color: black;
 }
 
-.dropdown.active .dropdown-content {
+.deroulant.active .deroulant-contenu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -116,7 +116,7 @@ header {
     color: white;
 }
 
-.titre-site-nv1 {
+h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: clamp(28px, 6vw, 60px);
@@ -125,7 +125,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.titre-site-nv2 {
+h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: clamp(20px, 4vw, 40px);
@@ -133,7 +133,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.scroll-button {
+.bouton-scroll {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -145,11 +145,11 @@ header {
     transition: transform 0.3s ease;
 }
 
-.scroll-button:hover {
+.bouton-scroll:hover {
     transform: translateX(-50%) translateY(-5px);
 }
 
-.scroll-button span {
+.bouton-scroll span {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(1rem, 3vw, 2rem);
     color: beige;
@@ -157,7 +157,7 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-.scroll-button img {
+.bouton-scroll img {
     width: 70px;
     height: auto;
     transform: rotate(90deg); /* rotation car images/right-arrow.png est orientee vers la droite */
@@ -165,18 +165,18 @@ header {
     transition: transform 0.3s ease;
 }
 
-.scroll-button:hover img {
+.bouton-scroll:hover img {
     transform: rotate(90deg) translateX(-5px);
 }
 
 
 
 /* <================================================ PARTIE INFOS SUR PAGES DU SITE ================================================> */
-#content-section {
+#section-contenu {
     position: relative;
 }
 
-.content-wrapper {
+.wrapper-contenu {
     position: relative;
     width: 90%;
     max-width: 1200px;
@@ -185,7 +185,7 @@ header {
     justify-content: center;
 }
 
-.content-box {
+.contenu-box {
     width: 100%;
     height: 70vh;
     min-height: 400px;
@@ -199,22 +199,22 @@ header {
     color: white;
 }
 
-.content-item {
+.contenu-item {
     display: none;
     animation: fadeIn 0.5s ease;
 }
 
-.content-item.active {
+.contenu-item.active {
     display: block;
 }
 
-.content-item-cols {
+.contenu-item-cols {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.content-item-p-container {
+.contenu-item-p-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -231,21 +231,21 @@ header {
     }
 }
 
-.content-item h2 {
+.contenu-item h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(24px, 4vw, 36px);
     margin-bottom: 20px;
     color: beige;
 }
 
-.content-item-cols p {
+.contenu-item-cols p {
     margin-top: 20px;
     font-size: clamp(14px, 2vw, 18px);
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.content-item-cols img {
+.contenu-item-cols img {
     margin-top: 20px;
     width: 48%;
     height: 48%;
@@ -259,7 +259,7 @@ header {
     padding: 40px;
 }
 
-.decouvrir-zone>button {
+.decouvrir-bouton {
     background-color: rgba(65, 105, 225, 0.4);
     padding: 13px 25px;
     border-radius: 16px;
@@ -268,9 +268,10 @@ header {
     font-size: clamp(16px, 4vw, 22px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     color: beige;
+    text-decoration: none;
 }
 
-.decouvrir-zone>button:hover {
+.decouvrir-bouton:hover {
     cursor: pointer;
     background-color: rgba(65, 193, 225, 0.4);
 }
@@ -313,7 +314,7 @@ button>a {
     height: 40px;
 }
 
-.content-indicator {
+.contenu-indicator {
     display: flex;
     gap: 10px;
     margin-top: 20px;
@@ -335,16 +336,31 @@ button>a {
 }
 
 footer {
-    height: 40px;
+    height: fit-content;
     width: 100%;
     background-color: #303030;
     position: relative;
     bottom: 0;
     display: flex;
-    align-items: center;
-    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
     color: beige;
     z-index: 999;
+    font-size: clamp(10px, 2vw, 12px)
+}
+
+.footer-left {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: beige;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 
@@ -352,13 +368,13 @@ footer {
 
 /* infos sur page: image et description, afficher en colonne sur petit ecran */
 @media (max-width: 950px) {
-    .content-item-cols {
+    .contenu-item-cols {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .content-item-cols img {
+    .contenu-item-cols img {
         width: 100%;
     }
 }
@@ -371,7 +387,7 @@ footer {
         align-items: center;
     }
     
-    .dropdown-content {
+    .dropdown-contenu {
         position: fixed;
         top: 70px;
         right: 0;
@@ -384,14 +400,14 @@ footer {
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .dropdown-content a {
+    .dropdown-contenu a {
         display: block;
         padding: 16px;
         font-size: 1.1rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    .dropdown.active .dropdown.content {
+    .dropdown.active .dropdown.contenu {
         transform: translateY(0);
     }
 
@@ -405,7 +421,7 @@ footer {
         border-radius: 3px;
     }
 
-    .content-box {
+    .contenu-box {
         padding: 20px;
         height: 70vh;
     }
@@ -449,7 +465,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .content-wrapper {
+    .contenu-wrapper {
         width: 95%;
     }
 
@@ -471,7 +487,7 @@ footer {
         transform: scale(1.1);
     }
 
-    .content-box {
+    .contenu-box {
         height: 65vh;
     }
 
