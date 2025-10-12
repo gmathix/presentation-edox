@@ -33,6 +33,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
+<section id="haut_de_page"></section>
 
 <header>
     <img id="logo" src="images/edox-logo.svg">
@@ -53,11 +54,11 @@
 </header>
 
 <body>
-    <div class="bandeau_titre" id="bandeau_titre">
+    <div class="bandeau_titre">
         <img id="bandeau" src="images/edox-bandeau.jpg" alt="bandeau edox">
         <h1>Présentation économique </h1>
     </div>
-    <section>
+    <section id="big_container">
         <div class="big_container">
             <div class="container">
                 <div class="rep_graphe">
@@ -116,7 +117,7 @@
             </div>
         </div>
 
-        <div class="background">
+        <div class="back">
             <a href="index.html">Accueil</a>
             <a href="page1.html">Organisation et fonctionnement</a>
             <a href="page3.html">L'impact écologique</a>
@@ -124,6 +125,7 @@
 
     <div class="scroll-button" id="scroll-button">
         <img src="images/right-arrow.png" alt="Flèche vers le bas">
+        <p>Retour en haut</p>
     </div>
 
         
@@ -166,7 +168,7 @@
         // Scroll button
         const scrollButton = document.getElementById('scroll-button');
         scrollButton.addEventListener('click', () => {
-            document.getElementById('bandeau_titre').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('haut_de_page').scrollIntoView({ behavior: 'smooth' });
         });
 
     </script>
