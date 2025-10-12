@@ -276,16 +276,16 @@ section {
   
 }
 
-/* ==============================BACKPAGE================================== */
+/* ==============================BACKGROUND================================== */
 
-.backpage{
+.background{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.backpage a{
+.background a{
     text-decoration:none;
     color: #000;
     font-size: large;
