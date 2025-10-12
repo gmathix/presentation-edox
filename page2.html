@@ -53,11 +53,11 @@
 </header>
 
 <body>
-    <div class="bandeau_titre">
+    <div class="bandeau_titre" id="bandeau_titre">
         <img id="bandeau" src="images/edox-bandeau.jpg" alt="bandeau edox">
         <h1>Présentation économique </h1>
     </div>
-    <section id="big_container">
+    <section>
         <div class="big_container">
             <div class="container">
                 <div class="rep_graphe">
@@ -166,7 +166,7 @@
         // Scroll button
         const scrollButton = document.getElementById('scroll-button');
         scrollButton.addEventListener('click', () => {
-            document.getElementById('big_container').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('bandeau_titre').scrollIntoView({ behavior: 'smooth' });
         });
 
     </script>
