@@ -422,6 +422,10 @@ footer {
         border-radius: 3px;
     }
 
+    .bouton-scroll {
+        bottom: 60px;
+    }
+
     .contenu-box {
         padding: 20px;
         height: 70vh;
