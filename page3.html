@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impact écologique | Edox</title>
-  <link rel="stylesheet" href="page3-styles.css" />
+  <link rel="stylesheet" href=" css/page3-styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,14 +34,14 @@
 
 <body>
   <header>
-    <img id="logo" src="c:\Users\Med boubri\Downloads\edox-logo (1).png" alt="Logo Edox" />
-    <div class="dropdown">
-      <button class="dropbtn">
+    <img id="logo" src="images/edox-logo.svg" alt="Logo Edox" />
+    <div class="deroulant">
+      <button class="bouton-drop" id="bouton-menu" aria-label="Menu">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </button>
-      <div class="dropdown-content">
+      <div class="deroulant-contenu">
         <a href="index.html">Accueil</a>
         <a href="page1.html">Organisation et fonctionnement</a>
         <a href="page2.html">Présentation économique</a>
@@ -51,20 +51,19 @@
     
   </header>
 
-  <main>
     <section class="section">
-      <div id="titre-section">
-        <h1 class="titre-site-nv1">Impact écologique</h1>
-        <h2 class="titre-site-nv2">Notre engagement pour un avenir durable</h2>
+      <div class="bandeau_titre">
+        <h1>Impact écologique </h1>
       </div>
 
       <div class="content-wrapper">
         <div class="content-box">
           <div class="content-item active">
             <h2>Contexte environnemental</h2>
+            <br>
             <p>EDOX adopte une conception qui sert à se développer économiquement tout en reconnaissant les impacts environnementaux de cette croissance, dans ce contexte l'entreprise cherche à réduire ces source d'impact dans le but d'une performance économique compatible avec le respect du coté écologique.   </p>
             <p><strong>CA (2025) :</strong> 66,93 millions €</p>
-            <p><strong>Effectif :</strong> 28 personnes</p>
+            <p><strong>Effectif :</strong> 32 personnes</p>
             <p>Structure industrielle avec une empreinte liée à la logistique et aux fournisseurs.</p>
 
             <h2>Sources d’impact</h2>
@@ -92,8 +91,8 @@
         </div>
       </div>
     </section>
-  </main>
-<footer>
+
+      <footer>
         <div class="footer-left">
             <p style="font-weight: bold;">Année universitaire 2025-2026 / Semestre 1</p>
             <p style="font-style:italic">SAÉ 05-06 - Groupe 8 - Sujet : EDOX</p>
@@ -104,10 +103,27 @@
         </div>
         <div class="footer-right">
             <p >&copy; Écrit par Mohamed BOUOIARARNE</p>
-            
+            <a style="color:beige" href="ressources/rapport-economique.pdf" download>Rapport économique (PDF)</a>
         </div>
     </footer>
+
   <script>
+
+    // menu deroulant
+        const boutonMenu = document.getElementById('bouton-menu');
+        const deroulant = document.querySelector('.deroulant');
+
+        boutonMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+            deroulant.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!deroulant.contains(e.target)) {
+                deroulant.classList.remove('active');
+            }
+        });
+
     const ctx1 = document.getElementById('pieChart').getContext('2d');
     new Chart(ctx1, {
       type: 'pie',
@@ -174,6 +190,3 @@
         }
       }
     });
-  </script>
-</body>
-</html>
