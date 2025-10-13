@@ -6,7 +6,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-image: url("../images/icone-page1/arriere-plan-page1.png");
+    background-image: url("images/icone-page1/arriere-plan-page1.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,8 +104,8 @@ header {
 }
 
 #bandeau{
-    width: 100%;
-    height: 350px;
+    width: 100vw;
+    height: auto;
     z-index: 10;
 }
 
@@ -177,4 +177,5 @@ footer {
     flex-direction: column;
     align-items: flex-end;
 }
+
 
