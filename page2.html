@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -33,33 +33,35 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<section id="haut_de_page"></section>
-
-<header>
-    <img id="logo" src="images/edox-logo.svg">
-    <div class="dropdown">
-        <button class="dropbtn" id="menu-button" aria-label="Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <div class="dropdown-content" id="dropdown-content">
-            <a href="index.html">Accueil</a>
-            <a href="page1.html">Organisation et fonctionnement</a>
-            <a href="page2.html">Présentation économique</a>
-            <a href="page3.html">L'impact écologique</a>
-        </div>
-    </div>
-</header>
 
 <body>
+    <div id="haut_de_page"></div> <!--pour que la flèche retour marche -->
+
+    <header>
+        <img id="logo" src="images/edox-logo.svg" alt="logo edox">
+        <div class="dropdown">
+            <button class="dropbtn" id="menu-button" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="index.html">Accueil</a>
+                <a href="page1.html">Organisation et fonctionnement</a>
+                <a href="page2.html">Présentation économique</a>
+                <a href="page3.html">L'impact écologique</a>
+            </div>
+        </div>
+    </header>
+
     <div class="bandeau_titre">
         <img id="bandeau" src="images/edox-bandeau.jpg" alt="bandeau edox">
         <h1>Présentation économique </h1>
     </div>
-    <section id="big_container">
-        <div class="big_container">
+
+    <div class="big_container">
+        <div class="div_container">
             <div class="container">
                 <div class="rep_graphe">
                 </div>
@@ -67,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="big_container">
+        <div class="div_container">
             <div class="container">
                 <div class="texte">
                 </div>
@@ -76,7 +78,7 @@
 
             </div>
         </div>
-        <div class="big_container">
+        <div class="div_container">
             <div class="container">
                 <div class="rep_graphe">
                     <img src="images/edox-ca.png" alt="edox ca-va">
@@ -96,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="big_container">
+        <div class="div_container">
             <div class="container">
                 <div class="texte">
                     <p>Le graphique révèle une crise structurelle du modèle économique d'EDOX : l'entreprise crée
@@ -123,15 +125,15 @@
             <a href="page3.html">L'impact écologique</a>
         </div>
 
-    <div class="scroll-button" id="scroll-button">
-        <img src="images/right-arrow.png" alt="Flèche vers le bas">
-        <p>Retour en haut</p>
+        <div class="scroll-button" id="scroll-button">
+            <img src="images/right-arrow.png" alt="Flèche vers le bas">
+            <p>Retour en haut</p>
+        </div>
+
+
     </div>
 
-        
-    </section>        
-    
-    
+
     <footer>
         <div class="footer-left">
             <p style="font-weight: bold;">Année universitaire 2025-2026 / Semestre 1</p>
@@ -142,7 +144,7 @@
             <p>Mohamed BOUOIARARNE</p>
         </div>
         <div class="footer-right">
-            <p >&copy; Écrit par Lino DUBOIS</p>
+            <p>&copy; Écrit par Lino DUBOIS</p>
             <a style="color:beige" href="ressources/rapport-economique.pdf" download>Rapport économique (PDF)</a>
         </div>
     </footer>
@@ -174,7 +176,5 @@
     </script>
 
 </body>
-
-</html>
 
 </html>
