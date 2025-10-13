@@ -112,7 +112,7 @@ header {
 .icon {
     width: 90px;
     height: 90px;
-    background: #0085B7;
+    background: #2e5c8a;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -196,9 +196,12 @@ footer {
     align-items: flex-end;
 }
 
-
-
-
+h3{
+    position: absolute;
+    top:10px;
+    left:5px;
+    z-index: 1;
+}
 
 
 
