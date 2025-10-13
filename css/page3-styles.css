@@ -1,10 +1,17 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: rgb(0, 0, 0);
+b* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url("../images/edox-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -13,63 +20,82 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    top: 10;
-    left: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 #logo {
-  width: 120px;
-  height: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    width: 10vw;
+    height: auto;
+    max-width: 150px;
+    min-width: 80px;
+    color: beige;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-.dropbtn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 22px;
+.bouton-drop {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    padding: 0;
+    margin-right: 40px;
 }
 
 .bar {
-  height: 3px;
-  width: 100%;
-  background-color: rgb(73, 142, 237);
-  border-radius: 2px;
+    height: 3px;
+    width: 100%;
+    background-color: beige;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
-.dropdown-content {
-  position: absolute;
-  top: 45px;
-  right: 0;
-  background-color: #8d9ee9;
-  border-radius: 8px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
+.deroulant {
+    position: relative;
 }
 
-.dropdown:hover .dropdown-content {
-  opacity: 1;
-  pointer-events: auto;
+.deroulant-contenu {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    margin-right: 26px;
+    background-color: #1a365d;
+    min-width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+    text-align: center;
 }
 
-.dropdown-content a {
-  color: beige;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.deroulant-contenu a {
+    color: beige;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #F0EDCF;
-  color: black;
+.deroulant-contenu a:hover {
+    background-color: #F0EDCF;
+    color: black;
+}
+
+.deroulant.active .deroulant-contenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .section {
@@ -77,26 +103,38 @@ header {
   min-height: 100vh;
 }
 
-.titre-site-nv1,
-.titre-site-nv2 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.bandeau_titre {
+    position: relative;
 }
 
-.titre-site-nv1 {
-  font-size: clamp(28px, 6vw, 60px);
-  margin-bottom: 10px;
+h1 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: clamp(28px, 6vw, 60px);
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
-.titre-site-nv2 {
-  font-size: clamp(20px, 4vw, 40px);
-  margin-bottom: 40px;
-}
+
 
 .content-wrapper {
+  padding: 80px;
   display: flex;
   justify-content: center;
+}
+
+.content-wrapper p {
+  color: beige;
+}
+.content-wrapper li {
+  color: beige;
 }
 
 .content-box {
@@ -156,7 +194,7 @@ canvas {
 footer {
     height: fit-content;
     width: 100%;
-    background-color: #303030;
+    background-color: rgba(51, 48, 48, 0.7);
     position: relative;
     bottom: 0;
     display: flex;
@@ -191,3 +229,5 @@ footer {
     width: 90%;
   }
 }
+page3-styles.css
+4 Ko
