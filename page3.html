@@ -1,41 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/page3-styles.css">
-    <title>Impact écologique</title>
-</head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact écologique | Edox</title>
+  <link rel="stylesheet" href="page3-styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
-<header>
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-         <div class="dropdown-content">
-            <a href="index.html">Accueil</a>
-            <a href="page1.html">Organisation et fonctionnement</a>
-            <a href="page2.html">Présentation économique</a>
-            <a href="page3.html">L'impact écologique</a>
-        </div>
-    </div>
-    <img id="logo" src="images/edox-logo.png">
-</header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="images/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
 <body>
-    <h>CA (chiffre d’affaires) ~ 66,93 millions € pour 2025.Infonet</h>
-    <h>Effectif : environ 28 personnes (source Verif)</h>
-    <h>Hypothèses pour l’estimation de l’impact environnemental</h>
-        <p>Conso d’énergie dans les bureaux / entrepôts</p>
-        <p>Transport / logistique</p>
-        <p>Matériel informatique</p>
-        <p>Fournisseurs & fabrication des produits vendus (scope 3)</p>
-    <h>Estimation chiffrée</h>
-    <h>Fourchette totale estimée</h>
-    <h>Remarques / incertitudes énormes</h>
-</body>
+  <header>
+    <img id="logo" src="c:\Users\Med boubri\Downloads\edox-logo (1).png" alt="Logo Edox" />
+    <div class="dropdown">
+      <button class="dropbtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div class="dropdown-content">
+        <a href="index.html">Accueil</a>
+        <a href="page1.html">Organisation et fonctionnement</a>
+        <a href="page2.html">Présentation économique</a>
+        <a href="page3.html">Impact écologique</a>
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="section">
+      <div id="titre-section">
+        <h1 class="titre-site-nv1">Impact écologique</h1>
+        <h2 class="titre-site-nv2">Notre engagement pour un avenir durable</h2>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="content-box">
+          <div class="content-item active">
+            <h2>Contexte environnemental</h2>
+            <p>EDOX adopte une conception qui sert à se développer économiquement tout en reconnaissant les impacts environnementaux de cette croissance, dans ce contexte l'entreprise cherche à réduire ces source d'impact dans le but d'une performance économique compatible avec le respect du coté écologique.   </p>
+            <p><strong>CA (2025) :</strong> 66,93 millions €</p>
+            <p><strong>Effectif :</strong> 28 personnes</p>
+            <p>Structure industrielle avec une empreinte liée à la logistique et aux fournisseurs.</p>
+
+            <h2>Sources d’impact</h2>
+            <ul>
+              <li>Énergie (bureaux & ateliers)</li>
+              <li>Transport & logistique</li>
+              <li>Matériel informatique</li>
+              <li>Fournisseurs (scope 3)</li>
+            </ul>
+
+            <h2>Objectifs & actions</h2>
+            <p>Réduction de <strong>30 % d’ici 2030</strong> via emballages recyclables, transport optimisé, RSE et partenaires ISO 14001.</p>
+
+            <div class="graph-zone">
+              <div class="graph-box">
+                <h3>Répartition des émissions</h3>
+                <canvas id="pieChart"></canvas>
+              </div>
+              <div class="graph-box">
+                <h3>Objectif de réduction</h3>
+                <canvas id="barChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 <footer>
-    <p>&copy; Écrit par Mohamed BOUOIARARNE</p>
-</footer>
+        <div class="footer-left">
+            <p style="font-weight: bold;">Année universitaire 2025-2026 / Semestre 1</p>
+            <p style="font-style:italic">SAÉ 05-06 - Groupe 8 - Sujet : EDOX</p>
+            <p>Mathis GUIHOT (référent)</p>
+            <p>Alban FAYARD</p>
+            <p>Lino DUBOIS</p>
+            <p>Mohamed BOUOIARARNE</p>
+        </div>
+        <div class="footer-right">
+            <p >&copy; Écrit par Mohamed BOUOIARARNE</p>
+            
+        </div>
+    </footer>
+  <script>
+    const ctx1 = document.getElementById('pieChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'pie',
+      data: {
+        labels: ['Énergie', 'Transport', 'Informatique', 'Fournisseurs'],
+        datasets: [{
+          data: [35, 80, 10, 125],
+          backgroundColor: ['#1a365d', '#2E5C8A', '#5A8BB0', '#96c0e0'],
+          hoverOffset: 8
+        }]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Répartition estimée des émissions de CO₂',
+            color: '#1a365d',
+            font: { size: 16, weight: 'bold' }
+          },
+          legend: {
+            position: 'bottom',
+            labels: { color: '#1a365d' }
+          }
+        }
+      }
+    });
 
-
+    const ctx2 = document.getElementById('barChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['2025', '2030'],
+        datasets: [{
+          label: 'Émissions (tCO₂/an)',
+          data: [250, 175],
+          backgroundColor: ['#2D5C8A', '#96c0e0'],
+          borderColor: '#1a365d',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#1a365d' },
+            title: {
+              display: true,
+              text: 'Tonnes équivalent CO₂',
+              color: '#1a365d'
+            }
+          },
+          x: {
+            ticks: { color: '#1a365d' }
+          }
+        },
+        plugins: {
+          title: {
+            display: true,
+            text: 'Objectif de réduction d’émissions (-30 %)',
+            color: '#1a365d',
+            font: { size: 16, weight: 'bold' }
+          },
+          legend: { display: false }
+        }
+      }
+    });
+  </script>
+</body>
 </html>
