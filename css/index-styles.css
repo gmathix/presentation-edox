@@ -296,9 +296,6 @@ button>a {
     z-index: 10;
 }
 
-.nav-arrow:hover {
-    background-color: rgba(26, 54, 93, 1);
-}
 
 .nav-arrow.left {
     left: -70px;
@@ -312,6 +309,10 @@ button>a {
 .nav-arrow img {
     width: 40px;
     height: 40px;
+}
+
+.nav-arrow:hover {
+    transform: translateY(-40%) scale(140%);
 }
 
 .contenu-indicator {
