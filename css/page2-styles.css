@@ -194,7 +194,7 @@ header {
 
 
 
-/* image bandeau avec texte */
+/* image bandeau*/
 
 .bandeau_titre {
     position: relative;
@@ -206,6 +206,8 @@ header {
     z-index: 10;
 }
 
+/* TITRE */
+
 h1 {
     position: absolute;
     top: 38%;
@@ -214,16 +216,11 @@ h1 {
     z-index: 11;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: clamp(28px, 6vw, 60px);
+    font-size: 500%;
     color: white;
     margin-top: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
-
-
-
-/* TITRE */
 
 
 
@@ -235,70 +232,114 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    margin: 100px 100px 200px 100px;
+    margin: 100px 150px 150px 150px;
 
 }
 
-#big_container {
-    position: relative;
-}
 
 .div_container {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: auto;
     background-color: rgba(36, 34, 34, 0.85);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 40px;
+    padding: 150px 40px 40px 40px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
+    color: beige;
+    gap:50px;
 }
 
-
-.container {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    height: 100%;
+.content_container{
     width: 100%;
+    height: auto;
+    background-color: rgba(36, 34, 34, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.content {
+    margin: 50px 130px;
+    text-align: center;
+}
+
+.content p{
+    color: beige;
+    font-size: 150%;
+    line-height: 2em;
+}
+.content p strong{
+    color:#1476f5;
+}
+
+
+h2{
+    position: absolute;
+    top:9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+}
 .rep_graphe {
-    background-color: #27bbff83;
     height: 100%;
     width: 50%;
 }
 
 .texte {
-
-    background-color: rgba(80, 80, 80, 0.486);
+    font-size: 150%;
+    line-height: 2em;
     height: 100%;
     width: 50%;
-    
-
-    border-radius: 5px;
 }
+
+.texte li strong{
+    color: #1476f5;
+}
+
 
 .rep_graphe img {
     height: 100%;
     width: 100%;
-  
+    border-radius: 10px;
+
 }
 
 /* ==============================RETOUR AUTRES PAGES ================================== */
 
-.back{
+
+.bas_de_page{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:70px;
+
 }
 
+.back{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
 
 .back a{
     text-decoration:none;
-    color: #000;
-    font-size: large;
+    font-size: large;    
+    color: #1476f5;
+    font-weight: bold ;    
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.back a:hover{
+    color: beige;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform:  translateY(-5px);
+    transition: transform 0.3s ease;
+    font-weight: bolder;
 }
 
 
@@ -316,9 +357,10 @@ h1 {
 }
 
 .scroll-button p{
+    font-size: large; 
     color: #1476f5;
     font-weight: bold;
-    filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
 
 }
 
