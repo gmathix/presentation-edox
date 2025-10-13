@@ -216,7 +216,7 @@ h1 {
     z-index: 11;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 320%;
+    font-size: 500%;
     color: white;
     margin-top: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -225,7 +225,7 @@ h1 {
 
 
 
-/* TUILES TONDEUSE A GAZON  */
+/*  CONTAINER AVEC LES COURBES (n°2 et 4) */
 
 .big_container {
     display: flex;
@@ -262,6 +262,39 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/*  Partie avec l'image (courbe)  */
+
+.rep_graphe {
+    height: 100%;
+    width: 50%;
+}
+
+.rep_graphe img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/*  partie avec le texte  */
+.texte {
+    font-size: 150%;
+    line-height: 2em;
+    height: 100%;
+    width: 50%;
+}
+
+h3{
+    font-size: 150%;
+}
+
+.texte strong{
+    color: #1476f5;
+}
+
+
+
+/*  1ER CONTAINER INTRO  */
 .content {
     margin: 50px 130px;
     text-align: center;
@@ -269,44 +302,78 @@ h1 {
 
 .content p{
     color: beige;
-    font-size: 125%;
+    font-size: 150%;
     line-height: 2em;
 }
-.content p strong{
+.content strong{
     color:#1476f5;
 }
-
 
 h2{
     position: absolute;
     top:9%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 220%;
-}
-.rep_graphe {
-    height: 100%;
-    width: 50%;
+    font-size: 250%;
 }
 
-.texte {
-    font-size: 125%;
+/*  3EME CONTAINER AVEC LES ICONES  */
+
+.icon_info_container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 130px;
+    color: beige;
+    font-size: 150%;
+    gap: 30px;
+}
+
+.icon_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.icon_info_container h4{
+    margin-left: 150px;
+    color: #1476f5;
+}
+
+.icon_info_container strong {
+    color: #1476f5;
+}
+
+.icon_info_container a {
+    font-weight: bold;
+    color:  #1476f5;
+    font-style: italic;
+}
+
+
+.icon_info img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+/*  DERNIER CONTAINER AVEC LA LSITE   */
+
+.liste{
+    margin: 50px 130px;
+    color: beige;
+    font-size: 150%;
     line-height: 2em;
-    height: 100%;
-    width: 50%;
 }
 
-.texte li strong{
+.liste strong{
     color: #1476f5;
 }
 
 
-.rep_graphe img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
 
-}
+
+
 
 /* ==============================RETOUR AUTRES PAGES ================================== */
 
@@ -329,13 +396,13 @@ h2{
 .back a{
     text-decoration:none;
     font-size: large;    
-    color: #1476f5;
+    color: #000000d0;
     font-weight: bold ;    
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .back a:hover{
-    color: beige;
+    color: #1476f5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform:  translateY(-5px);
     transition: transform 0.3s ease;
