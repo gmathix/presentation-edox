@@ -107,6 +107,12 @@ header {
     position: relative;
 }
 
+@media (max-width: 1230px) {
+  .bandeau_titre {
+    text-align: center;
+  }
+}
+
 h1 {
     position: absolute;
     top: 38%;
