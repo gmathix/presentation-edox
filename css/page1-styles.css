@@ -110,11 +110,16 @@ header {
 }
 
 .icon {
-    posotion: relative;
-    background-color:"white";
-    border-radius:100px;
+    width: 90px;
+    height: 90px;
+    background: #0085B7;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon img{
+    display: block;
     width:50px;
     height:50px;
 }
@@ -187,6 +192,7 @@ footer {
     flex-direction: column;
     align-items: flex-end;
 }
+
 
 
 
