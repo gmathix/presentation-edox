@@ -229,6 +229,13 @@ h3{
     width:50%;
 }
 
+section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:80px;
+    margin:100px 150px 150px 150px;
+}
 
 
 
