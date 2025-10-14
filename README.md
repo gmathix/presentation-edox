@@ -63,5 +63,15 @@ Vérification W3C : <img width="943" height="571" alt="pag3-valid" src="https://
 
 
 ### Planification - Diagramme de Gantt
- - Mathis GUIHOT
+ - Lino DUBOIS (planification)
+ - Mathis GUIHOT (Diagramme de Gantt)
+
+   
+### Eléments communs dans le site 
+ - Mathis GUIHOT:
+      - menu déroulant + footer + image de fond pour la page d'accueil et la page 3
+ - Lino DUBOIS :
+      - footer + bandeau image pour les pages 1 et 2
+ 
+
 
