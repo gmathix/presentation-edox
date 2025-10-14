@@ -206,14 +206,14 @@ h3{
 .elm{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: auto;
     gap: 50px;
 }
     
 .image{
     width:50%;
-    height:100%;
+    height:auto;
 }
 
 .txt{
@@ -222,6 +222,7 @@ h3{
     height:100%
     width:50%
 }
+
 
 
 
