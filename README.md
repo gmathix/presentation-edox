@@ -22,15 +22,20 @@ Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la S
 **Auteur : Mathis GUIHOT**  
 Vérification W3C : <img width="943" height="568" alt="index-valid" src="https://github.com/user-attachments/assets/8be3bd44-67e6-4186-b204-15ec30f13210" />
 
-
 [Detail ici]
 (https://validator.w3.org/nu/?doc=https%3A%2F%2Fgmathix.github.io%2Fpresentation-edox%2F)
+
+<img width="942" height="637" alt="Screenshot_20251014_172736" src="https://github.com/user-attachments/assets/f25980a5-2f3f-47e7-8326-5867e319d7b5" />
+
 
 ### Page de présentation et organisation
 
 **Auteur: Alban FAYARD**
 
 Vérification W3C : <img width="952" height="750" alt="page1-valid" src="https://github.com/user-attachments/assets/e69d69d9-c186-4b5f-bc35-711f79b73371" />
+
+<img width="942" height="637" alt="Screenshot_20251014_172839" src="https://github.com/user-attachments/assets/b2e451ce-84cc-4466-9872-f14cf0922a67" />
+
 
 
 ### Page de présentation économique
@@ -39,6 +44,10 @@ Vérification W3C : <img width="952" height="750" alt="page1-valid" src="https:/
 
 Vérification W3C : <img width="943" height="571" alt="page2-valid" src="https://github.com/user-attachments/assets/ae7a5af5-1842-4397-830f-54a586827ca2" />
 
+[Detail ici]
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fgmathix.github.io%2Fpresentation-edox%2Fpage2.html
+
+<img width="931" height="841" alt="Screenshot_20251014_173343" src="https://github.com/user-attachments/assets/8a26f84c-1aac-4651-885e-f714ec14072e" />
 
 ### Page de présentation écologique
 
@@ -47,5 +56,12 @@ Vérification W3C : <img width="943" height="571" alt="page2-valid" src="https:/
 Vérification W3C : <img width="943" height="571" alt="pag3-valid" src="https://github.com/user-attachments/assets/3d66b3a0-efa1-4127-a23a-162d157ccf6a" />
 
 [Detail ici]
-(https://validator.w3.org/nu/?doc=https%3A%2F%2Fgmathix.github.io%2Fpresentation-edox%2F)
+(https://validator.w3.org/nu/?doc=https%3A%2F%2Fgmathix.github.io%2Fpresentation-edox%2Fpage3.html)
+
+<img width="931" height="841" alt="Screenshot_20251014_173504" src="https://github.com/user-attachments/assets/c3a4acd4-c08b-4fed-9b67-288981296369" />
+
+
+
+### Planification - Diagramme de Gantt
+ - Mathis GUIHOT
 
