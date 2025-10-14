@@ -205,18 +205,23 @@ h3{
 
 .elm{
     display: flex;
-    flex-direction: row;
-    grid-gap: 14px;
-    align-items: flex-start;
-    padding: 16px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 50px;
 }
     
 .image{
-    position:relative;
     width:50%;
-    height:25%;
+    height:100%;
 }
 
+.txt{
+    font-size: 150%;
+    line-height: 2em;
+    height:100%
+    width:50%
+}
 
 
 
