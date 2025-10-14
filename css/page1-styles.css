@@ -219,9 +219,10 @@ h3{
 .txt{
     font-size: 150%;
     line-height: 2em;
-    height:100%;
+    height:auto;
     width:50%;
 }
+
 
 
 
