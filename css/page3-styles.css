@@ -235,3 +235,150 @@ footer {
     width: 90%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+.eco-challenge-box {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+}
+
+.challenge-col {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.challenge-col h3 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.challenge-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.challenge-col li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    color:black;
+}
+
+.challenge-col li:last-child {
+    border-bottom: none;
+}
+
+.challenge-arrow {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.challenge-arrow p {
+    font-size: 0.9rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Texte soutenabilité */
+.sustainability-text {
+    margin: 3rem 0;
+    line-height: 1.8;
+}
+
+.sustainability-text h3 {
+    color: beige;
+    margin: 2rem 0 1rem;
+}
+
+.solutions-list {
+    background: #f8f9fa;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid #2E5C8A;
+    margin: 1.5rem 0;
+}
+
+.solutions-list li {
+    margin: 1rem 0;
+    color:black;
+}
+
+.quote-box {
+    background: linear-gradient(135deg, #2E5C8A 0%, #1a365d 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.quote-box em {
+    font-size: 1.1rem;
+}
+
+/* Triple dimension */
+.triple-dimension {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.pillar {
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.pillar h4 {
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pillar p {
+  color:black;
+}
+
+.pillar .status {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.pillar-conclusion {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e9ecef;
+}
